@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <PreferenceCategory android:title="@string/pref_cat_server">
+        <EditTextPreference
+            android:defaultValue="@string/prefIPServeur_defaultValue"
+            android:key="prefIPServeur"
+            android:title="@string/pref_setting_IP" />
+        <EditTextPreference
+            android:defaultValue="@string/prefPortServeur_defaultValue"
+            android:inputType="number"
+            android:key="prefPortServeur"
+            android:title="@string/pref_setting_port" />
+        <EditTextPreference
+            android:inputType="text"
+            android:key="prefTest"
+            android:title="Pref Test:" />
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="@string/pref_cat_ParametreGeneral">
+        <EditTextPreference
+            android:key="pref_DelayBetweenClicks"
+            android:defaultValue="300"
+            android:title="@string/pref_DelayBetweenClicks_title"
+            android:inputType="number"
+            />
+
+        <PreferenceScreen android:title="Boutton 'Tout Ouvrir' / 'Tout Fermer'">
+            <SwitchPreference
+                android:key="pref_TOUT_Command_F1"
+                android:title="@string/lblFenetre1"
+                android:defaultValue="true"
+                />
+
+            <SwitchPreference
+                android:key="pref_TOUT_Command_F2"
+                android:title="@string/lblFenetre2"
+                android:defaultValue="true"
+                />
+            <SwitchPreference
+                android:key="pref_TOUT_Command_F3"
+                android:title="@string/lblFenetre3"
+                android:defaultValue="true"
+                />
+            <SwitchPreference
+                android:key="pref_TOUT_Command_F4"
+                android:title="@string/lblFenetre4"
+                android:defaultValue="true"
+                />
+            <SwitchPreference
+                android:key="pref_TOUT_Command_F5"
+                android:title="@string/lblFenetre5"
+                android:defaultValue="true"
+                />
+            <SwitchPreference
+                android:key="pref_TOUT_Command_F6"
+                android:title="@string/lblFenetre6"
+                android:defaultValue="true"
+                />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Réglage des horaires">
+
+        <PreferenceScreen android:title="Ouverture par horaire">
+            <SwitchPreference
+                android:id="@+id/OA1_enabled"
+                android:key="OA1_enabled"
+                android:title="Heure 1" />
+            <com.zaraxxx.apps.veranda.TimePreference
+                android:dependency="OA1_enabled"
+                android:key="OA1_value"
+                android:title="none" />
+
+            <SwitchPreference
+                android:key="OA2_enabled"
+                android:title="Heure 2" />
+            <com.zaraxxx.apps.veranda.TimePreference
+                android:dependency="OA2_enabled"
+                android:key="OA2_value"
+                android:title="none" />
+
+            <SwitchPreference
+                android:key="OA3_enabled"
+                android:title="Heure 3" />
+            <com.zaraxxx.apps.veranda.TimePreference
+                android:dependency="OA3_enabled"
+                android:key="OA3_value"
+                android:title="none" />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen android:title="Fermeture par horaire">
+            <SwitchPreference
+                android:key="FA1_enabled"
+                android:title="Heure 1" />
+            <com.zaraxxx.apps.veranda.TimePreference
+                android:dependency="FA1_enabled"
+                android:key="FA1_value"
+                android:title="none" />
+
+            <SwitchPreference
+                android:key="FA2_enabled"
+                android:title="Heure 2" />
+            <com.zaraxxx.apps.veranda.TimePreference
+                android:dependency="FA2_enabled"
+                android:key="FA2_value"
+                android:title="none" />
+
+            <SwitchPreference
+                android:key="FA3_enabled"
+                android:title="Heure 3" />
+            <com.zaraxxx.apps.veranda.TimePreference
+                android:dependency="FA3_enabled"
+                android:key="FA3_value"
+                android:title="none" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

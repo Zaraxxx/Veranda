@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--     APPLI     -->
+    <string name="app_name">Veranda</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_settings">Paramètres</string>
+    <!--<string name="title_activity_main">MainActivity</string>-->
+
+    <!--     Preferences     -->
+    <string name="pref_cat_server">Paramètres serveur</string>
+        <string name="pref_setting_IP">Adresse IP</string>
+        <!--<string name="pref_setting_IP_summary">IP du serveur</string>-->
+        <string name="prefIPServeur_defaultValue">192.168.0.8</string>
+
+        <string name="pref_setting_port">Port</string>
+        <!--<string name="pref_setting_port_summary">Port du serveur</string>-->
+        <string name="prefPortServeur_defaultValue">23</string>
+
+    <string name="pref_cat_ParametreGeneral">Paramètres Générale</string>
+
+        <string name="pref_DelayBetweenClicks_title">Délais entre les cliques</string>
+        <!--<string name="pref_DelayBetweenClicks_summary">Délais entre les cliques en milisecondes</string>-->
+
+
+
+    <string name="pref_cat_OuvertureAuto">Ouverture Automatique</string>
+        <string name="pref_setting_OA_Time1">Heure 1</string>
+        <string name="pref_setting_OA_Time2">Heure 2</string>
+        <string name="pref_setting_OA_Time3">Heure 3</string>
+
+
+    <string name="pref_cat_FermetureAuto">Fermeture Automatique</string>
+        <string name="pref_setting_FA_Time1">Heure 1</string>
+        <string name="pref_setting_FA_Time2">Heure 2</string>
+        <string name="pref_setting_FA_Time3">Heure 3</string>
+
+    <!--     Labels     -->
+    <string name="lblPage1">Mode simple</string>
+    <string name="lblPage2">Mode avancé</string>
+
+
+    <string name="lblOuvrir">Ouvrir</string>
+    <string name="lblStop">Stop</string>
+    <string name="lblFermer">Fermer</string>
+
+    <string name="lblFenetre1">Store 1</string>
+    <string name="lblFenetre2">Store 2</string>
+    <string name="lblFenetre3">Store 3</string>
+    <string name="lblFenetre4">Store 4</string>
+    <string name="lblFenetre5">Store 5</string>
+    <string name="lblFenetre6">Store 6</string>
+
+    <string name="lblToutFermer">Tout Fermer</string>
+    <string name="lblToutOuvrir">Tout Ouvrir</string>
+
+
+
+
+</resources>

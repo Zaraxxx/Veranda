@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP: "
+            />
+        <EditText
+            android:id="@+id/tbIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="192.0.168.18"
+            android:inputType="text"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Port: "
+            />
+        <EditText
+            android:id="@+id/tbPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:inputType="text"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btConnect"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        />
+    <Button
+        android:id="@+id/btDisconnect"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        />
+
+    <EditText
+        android:id="@+id/tbTextToSend"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="Hello"
+        android:gravity="top"
+        />
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="Send"/>
+
+
+</LinearLayout>

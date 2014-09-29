@@ -1,0 +1,135 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/PaddingBottomFragments"
+    android:paddingLeft="@dimen/PaddingCoteFragments"
+    android:paddingRight="@dimen/PaddingCoteFragments"
+    android:paddingTop="@dimen/PaddingTopFragments"
+    >
+
+    <LinearLayout
+        android:id="@+id/MyLineraLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/btF1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textsize_petitbutton"
+            android:layout_weight="1"
+            android:text="@string/lblFenetre1"
+
+           />
+
+        <Button
+            android:id="@+id/btF2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textsize_petitbutton"
+            android:layout_weight="1"
+            android:text="@string/lblFenetre2"
+            />
+
+        <Button
+            android:id="@+id/btF3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textsize_petitbutton"
+            android:layout_weight="1"
+            android:text="@string/lblFenetre3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MyLineraLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/MyLineraLayout1"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/btF4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textsize_petitbutton"
+            android:layout_weight="1"
+            android:text="@string/lblFenetre4"
+
+            />
+
+        <Button
+            android:id="@+id/btF5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textsize_petitbutton"
+            android:layout_weight="1"
+            android:text="@string/lblFenetre5"
+            />
+
+        <Button
+            android:id="@+id/btF6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textsize_petitbutton"
+            android:layout_weight="1"
+            android:text="@string/lblFenetre6"
+            />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/mySpace1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/MyLineraLayout2" />
+
+    <LinearLayout
+        android:id="@+id/MyLineraLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mySpace1"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btOuvrir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/textsize_grosbutton"
+            android:drawableStart="@android:drawable/arrow_up_float"
+            android:drawableLeft="@android:drawable/arrow_up_float"
+            android:text="@string/lblOuvrir"
+            />
+
+        <Button
+            android:id="@+id/btStop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textsize_grosbutton"
+            android:layout_weight="1"
+            android:text="@string/lblStop"
+            android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:drawablePadding="-20dp"
+            />
+
+        <Button
+            android:id="@+id/btFermer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/textsize_grosbutton"
+            android:drawableStart="@android:drawable/arrow_down_float"
+            android:drawableLeft="@android:drawable/arrow_down_float"
+            android:text="@string/lblFermer"
+            />
+    </LinearLayout>
+</RelativeLayout>
